@@ -13,3 +13,7 @@ venv/
 
 # 本地 venv（隔离依赖，不入库）
 C:/Users/user/.workbuddy/binaries/python/envs/cmr/
+
+# slidep 构建缓存（PPT 生成过程文件，不入库）
+**/.slidep/
+**/.cache/
