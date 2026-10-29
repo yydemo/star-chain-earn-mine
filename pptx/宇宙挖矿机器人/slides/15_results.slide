@@ -1,0 +1,42 @@
+<Slide type="content">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', flexDirection: 'row' }}>
+    <Box style={{ width: '56%', height: '100%', justifyContent: 'center', padding: '40px 30px' }}>
+      <Chart
+        style={{ height: '72%', width: '100%' }}
+        chartType='barChart'
+        barDirection='column'
+        title='三场景星链成交额对比（¥）'
+        titleColor='#E5EDF7'
+        showLegend={false}
+        showDataLabels={true}
+        dataLabelColor='#E5EDF7'
+        legendColor='#94A3B8'
+        axisColor='#94A3B8'
+        colors={['#22D3EE']}
+        background='#0B1120'
+        data={[
+          ['场景', '星链成交额'],
+          ['DEPOT 地月基地', 21801],
+          ['MARS 火星车', 10859],
+          ['GENERIC 类月', 16188],
+        ]}
+      />
+    </Box>
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 48px', gap: 14 }}>
+      <Animation animType="fadeIn" duration={600}>
+        <Text style={{ fontSize: 28, color: '#E5EDF7', fontWeight: 'bold' }}>三场景仿真结果</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ gap: 10, marginTop: 4 }}>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>· DEPOT：采矿 67 点 / 集尘排空 25 批 / 区块 118</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>· MARS：86 步尘暴 / 集尘 23 批 / 区块 104</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>· 区块链完整性校验：全部通过</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>· 星链覆盖率 ~100%，时延 28–61 ms</Text>
+        </Box>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 14, color: '#F59E0B', lineHeight: 1.7 }}>⚠ 待优化：火星红色风化层干扰检测，精确率 0.54，需专属重训练。</Text>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,22 @@
+<Slide type="cover">
+  <Box style={{ position: 'relative', width: '100%', height: '100%', background: '#0B1120' }}>
+    <Image src="assets/starlink_coverage.svg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.45 }} />
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(90deg, rgba(11,17,32,0.94) 0%, rgba(11,17,32,0.6) 55%, rgba(11,17,32,0.25) 100%)' }} />
+    <Box style={{ position: 'relative', zIndex: 2, height: '100%', justifyContent: 'center', padding: '0 80px' }}>
+      <Animation animType="fadeIn" duration={700}>
+        <Text style={{ fontSize: 30, color: '#22D3EE', fontWeight: 'bold', letterSpacing: 3 }}>COSMIC MINING ROBOT</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={700}>
+        <Text style={{ fontSize: 64, color: '#E5EDF7', fontWeight: 'bold', lineHeight: 1.15, marginTop: 18 }}>
+          从扫地机器人<Text style={{ color: '#3B82F6' }}>→</Text>宇宙挖矿机器人
+        </Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={700}>
+        <Text style={{ fontSize: 22, color: '#94A3B8', marginTop: 26, lineHeight: 1.7 }}>
+          把家用清洁改造为地外采矿的完整技术闭环<Text style={{ color: '#94A3B8' }}><br/></Text>
+          316L 不锈钢机身 · 西电第三代半导体抗辐射算力 · 火星车仿真 · Starlink 星链 · 区块链溯源
+        </Text>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>

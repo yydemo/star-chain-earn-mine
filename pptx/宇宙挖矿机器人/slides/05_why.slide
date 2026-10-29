@@ -1,0 +1,43 @@
+<Slide type="content">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', flexDirection: 'row' }}>
+    <Box style={{ width: '60%', height: '100%', justifyContent: 'center', padding: '0 56px', gap: 14 }}>
+      <Animation animType="fadeIn" duration={600}>
+        <Text style={{ fontSize: 32, color: '#E5EDF7', fontWeight: 'bold' }}>改装逻辑：为什么是扫地机器人</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 17, color: '#94A3B8', lineHeight: 1.8 }}>
+          改装不是从零造机器人，而是「站在量产肩膀上」。消费级扫地机器人已经解决了最难的移动与自主问题，我们只需替换上身与作业模块，就能把清洁能力翻转成采矿能力。
+        </Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ gap: 12, marginTop: 6 }}>
+          <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.7 }}>· 成熟底盘：量产轮组 / 电池 / IMU，免从零研发</Text>
+          <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.7 }}>· 自主导航：ROS2 + Nav2 全覆盖路径，直接复用</Text>
+          <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.7 }}>· 结构空间：圆形机身 + 集尘盒，天然容纳钻采 / 样本仓</Text>
+          <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.7 }}>· 成本可控：消费底座约千元内，改装后价值跃升</Text>
+          <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.7 }}>· 可验证：本地仿真即可闭环，无需先发射</Text>
+        </Box>
+      </Animation>
+    </Box>
+    <Box style={{ width: '40%', height: '100%', justifyContent: 'center', padding: '0 40px', gap: 16 }}>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ background: '#0F1B33', border: '1px solid #1E3A5F', borderRadius: 12, padding: 20 }}>
+          <Text style={{ fontSize: 20, color: '#3B82F6', fontWeight: 'bold' }}>成熟</Text>
+          <Text style={{ fontSize: 14, color: '#94A3B8', marginTop: 6, lineHeight: 1.6 }}>量产地盘，可靠性已被市场验证</Text>
+        </Box>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ background: '#0F1B33', border: '1px solid #1E3A5F', borderRadius: 12, padding: 20 }}>
+          <Text style={{ fontSize: 20, color: '#22D3EE', fontWeight: 'bold' }}>自主</Text>
+          <Text style={{ fontSize: 14, color: '#94A3B8', marginTop: 6, lineHeight: 1.6 }}>自带 SLAM 与全覆盖算法内核</Text>
+        </Box>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ background: '#0F1B33', border: '1px solid #1E3A5F', borderRadius: 12, padding: 20 }}>
+          <Text style={{ fontSize: 20, color: '#F59E0B', fontWeight: 'bold' }}>可改</Text>
+          <Text style={{ fontSize: 14, color: '#94A3B8', marginTop: 6, lineHeight: 1.6 }}>集尘盒改造为集尘 / 样本双仓</Text>
+        </Box>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>

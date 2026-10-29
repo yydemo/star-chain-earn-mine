@@ -1,0 +1,97 @@
+=== boot pid=27968 ts=2026-10-29 11:26:49.869 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/01_cover.slide ===
+[2026-10-29 11:26:49.865] [INFO ] [pid=27968] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:26:49.976] [INFO ] [pid=27968] [slide-version] fileId=sid_mvsz version=0 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=19244 ts=2026-10-29 11:27:01.885 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx --page-index 0 --out C:\Users\user\AppData\Local\Temp\slidep-screenshot-hG5AhX\slide_0.png ===
+[2026-10-29 11:27:01.878] [INFO ] [pid=19244] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:27:02.009] [INFO ] [pid=19244] [slide-version] fileId=sid_mvsz version=1 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=1452 ts=2026-10-29 11:27:04.237 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js lint D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/01_cover.slide --page-index 0 --visual ===
+[2026-10-29 11:27:04.234] [WARN ] [pid=1452] [lint] screenshot FAIL reason=screenshot returned unparseable output: (empty)
+=== boot pid=24244 ts=2026-10-29 11:39:28.741 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/04_architecture.slide ===
+[2026-10-29 11:39:28.738] [INFO ] [pid=24244] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:39:28.836] [INFO ] [pid=24244] [slide-version] fileId=sid_mvsz version=1 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=27480 ts=2026-10-29 11:39:35.472 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/05_why.slide ===
+[2026-10-29 11:39:35.467] [INFO ] [pid=27480] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:39:35.546] [INFO ] [pid=27480] [slide-version] fileId=sid_mvsz version=2 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=11596 ts=2026-10-29 11:39:41.017 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/06_section2.slide ===
+[2026-10-29 11:39:41.015] [INFO ] [pid=11596] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:39:41.099] [INFO ] [pid=11596] [slide-version] fileId=sid_mvsz version=2 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=24432 ts=2026-10-29 11:39:47.399 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/07_base.slide ===
+[2026-10-29 11:39:47.396] [INFO ] [pid=24432] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:39:47.480] [INFO ] [pid=24432] [slide-version] fileId=sid_mvsz version=3 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=2624 ts=2026-10-29 11:39:54.481 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/08_cmr_structure.slide ===
+[2026-10-29 11:39:54.479] [INFO ] [pid=2624] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:39:54.563] [INFO ] [pid=2624] [slide-version] fileId=sid_mvsz version=4 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=16400 ts=2026-10-29 11:40:01.096 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/09_xidian.slide ===
+[2026-10-29 11:40:01.093] [INFO ] [pid=16400] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:01.174] [INFO ] [pid=16400] [slide-version] fileId=sid_mvsz version=5 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=25444 ts=2026-10-29 11:40:07.764 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/10_compile.slide ===
+[2026-10-29 11:40:07.762] [INFO ] [pid=25444] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:07.839] [INFO ] [pid=25444] [slide-version] fileId=sid_mvsz version=6 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=33148 ts=2026-10-29 11:40:14.940 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/11_section3.slide ===
+[2026-10-29 11:40:14.938] [INFO ] [pid=33148] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:15.018] [INFO ] [pid=33148] [slide-version] fileId=sid_mvsz version=7 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=15776 ts=2026-10-29 11:40:21.336 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/12_starlink.slide ===
+[2026-10-29 11:40:21.333] [INFO ] [pid=15776] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:21.411] [INFO ] [pid=15776] [slide-version] fileId=sid_mvsz version=8 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=21276 ts=2026-10-29 11:40:28.171 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/13_blockchain_sell.slide ===
+[2026-10-29 11:40:28.170] [INFO ] [pid=21276] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:28.250] [INFO ] [pid=21276] [slide-version] fileId=sid_mvsz version=9 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=18380 ts=2026-10-29 11:40:35.005 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/14_section4.slide ===
+[2026-10-29 11:40:35.002] [INFO ] [pid=18380] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:35.096] [INFO ] [pid=18380] [slide-version] fileId=sid_mvsz version=10 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=11380 ts=2026-10-29 11:40:42.414 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/15_results.slide ===
+[2026-10-29 11:40:42.412] [INFO ] [pid=11380] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:42.503] [INFO ] [pid=11380] [slide-version] fileId=sid_mvsz version=11 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=27200 ts=2026-10-29 11:40:49.337 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/16_ending.slide ===
+[2026-10-29 11:40:49.334] [INFO ] [pid=27200] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:40:49.416] [INFO ] [pid=27200] [slide-version] fileId=sid_mvsz version=12 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=3656 ts=2026-10-29 11:41:54.378 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js create D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx ===
+[2026-10-29 11:41:54.375] [INFO ] [pid=3656] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=21788 ts=2026-10-29 11:41:59.192 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/01_cover.slide ===
+[2026-10-29 11:41:59.189] [INFO ] [pid=21788] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:41:59.264] [INFO ] [pid=21788] [slide-version] fileId=03CFE4BA version=0 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=32528 ts=2026-10-29 11:42:05.304 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/02_catalog.slide ===
+[2026-10-29 11:42:05.302] [INFO ] [pid=32528] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:05.380] [INFO ] [pid=32528] [slide-version] fileId=03CFE4BA version=1 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=32120 ts=2026-10-29 11:42:11.423 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/03_section1.slide ===
+[2026-10-29 11:42:11.421] [INFO ] [pid=32120] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:11.500] [INFO ] [pid=32120] [slide-version] fileId=03CFE4BA version=2 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=9024 ts=2026-10-29 11:42:17.688 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/04_architecture.slide ===
+[2026-10-29 11:42:17.686] [INFO ] [pid=9024] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:17.755] [INFO ] [pid=9024] [slide-version] fileId=03CFE4BA version=3 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=27044 ts=2026-10-29 11:42:23.913 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/05_why.slide ===
+[2026-10-29 11:42:23.911] [INFO ] [pid=27044] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:23.979] [INFO ] [pid=27044] [slide-version] fileId=03CFE4BA version=4 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=32540 ts=2026-10-29 11:42:30.470 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/06_section2.slide ===
+[2026-10-29 11:42:30.467] [INFO ] [pid=32540] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:30.539] [INFO ] [pid=32540] [slide-version] fileId=03CFE4BA version=5 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=32100 ts=2026-10-29 11:42:36.583 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/07_base.slide ===
+[2026-10-29 11:42:36.580] [INFO ] [pid=32100] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:36.652] [INFO ] [pid=32100] [slide-version] fileId=03CFE4BA version=6 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=29988 ts=2026-10-29 11:42:43.042 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/08_cmr_structure.slide ===
+[2026-10-29 11:42:43.040] [INFO ] [pid=29988] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:43.110] [INFO ] [pid=29988] [slide-version] fileId=03CFE4BA version=7 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=21476 ts=2026-10-29 11:42:49.170 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/09_xidian.slide ===
+[2026-10-29 11:42:49.167] [INFO ] [pid=21476] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:42:49.254] [INFO ] [pid=21476] [slide-version] fileId=03CFE4BA version=8 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=16104 ts=2026-10-29 11:43:12.080 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/10_compile.slide ===
+[2026-10-29 11:43:12.076] [INFO ] [pid=16104] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:12.166] [INFO ] [pid=16104] [slide-version] fileId=03CFE4BA version=9 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=24172 ts=2026-10-29 11:43:18.546 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/11_section3.slide ===
+[2026-10-29 11:43:18.543] [INFO ] [pid=24172] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:18.624] [INFO ] [pid=24172] [slide-version] fileId=03CFE4BA version=10 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=22736 ts=2026-10-29 11:43:24.858 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/12_starlink.slide ===
+[2026-10-29 11:43:24.856] [INFO ] [pid=22736] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:24.930] [INFO ] [pid=22736] [slide-version] fileId=03CFE4BA version=11 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=23832 ts=2026-10-29 11:43:31.128 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/13_blockchain_sell.slide ===
+[2026-10-29 11:43:31.126] [INFO ] [pid=23832] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:31.195] [INFO ] [pid=23832] [slide-version] fileId=03CFE4BA version=12 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=712 ts=2026-10-29 11:43:37.709 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/14_section4.slide ===
+[2026-10-29 11:43:37.707] [INFO ] [pid=712] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:37.781] [INFO ] [pid=712] [slide-version] fileId=03CFE4BA version=13 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=33440 ts=2026-10-29 11:43:43.887 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/15_results.slide ===
+[2026-10-29 11:43:43.884] [INFO ] [pid=33440] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:43.955] [INFO ] [pid=33440] [slide-version] fileId=03CFE4BA version=14 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx
+=== boot pid=29072 ts=2026-10-29 11:43:50.441 cwd=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人 argv=C:\Users\user\.workbuddy\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl D:/program/扫地机转宇宙挖矿/cosmic_mining_robot/pptx/宇宙挖矿机器人/宇宙挖矿机器人.pptx --dsl-file slides/16_ending.slide ===
+[2026-10-29 11:43:50.439] [INFO ] [pid=29072] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-29 11:43:50.511] [INFO ] [pid=29072] [slide-version] fileId=03CFE4BA version=15 filePath=D:\program\扫地机转宇宙挖矿\cosmic_mining_robot\pptx\宇宙挖矿机器人\宇宙挖矿机器人.pptx

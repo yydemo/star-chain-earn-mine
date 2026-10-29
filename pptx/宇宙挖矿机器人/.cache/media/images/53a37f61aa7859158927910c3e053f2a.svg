@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="gR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <marker id="aR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#22D3EE"/>
+    </marker>
+  </defs>
+  <rect width="720" height="560" fill="#0B1120"/>
+  <text x="32" y="42" fill="#E5EDF7" font-size="26" font-weight="bold">扫地机器人底座 · 结构爆炸图</text>
+  <text x="32" y="64" fill="#94A3B8" font-size="14">开源 OOMWOO / Robovacuum — 改装的移动底座（保留导航与移动能力）</text>
+
+  <!-- 底盘主体 -->
+  <g>
+    <ellipse cx="360" cy="300" rx="180" ry="120" fill="#0F1B33" stroke="#3B82F6" stroke-width="2"/>
+    <ellipse cx="360" cy="300" rx="150" ry="95" fill="none" stroke="#1f3a63" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="360" y="296" fill="#E5EDF7" font-size="16" text-anchor="middle" font-weight="bold">差速底盘 + 轮编码器</text>
+    <text x="360" y="318" fill="#94A3B8" font-size="12" text-anchor="middle">表面移动 · 里程计 · 8–12kg</text>
+    <circle cx="220" cy="300" r="26" fill="#13233f" stroke="#22D3EE"/><text x="220" y="305" fill="#22D3EE" font-size="12" text-anchor="middle">轮</text>
+    <circle cx="500" cy="300" r="26" fill="#13233f" stroke="#22D3EE"/><text x="500" y="305" fill="#22D3EE" font-size="12" text-anchor="middle">轮</text>
+  </g>
+
+  <!-- 顶部 LiDAR -->
+  <line x1="360" y1="180" x2="360" y2="240" stroke="#22D3EE" stroke-width="2" marker-end="url(#aR)"/>
+  <g>
+    <rect x="320" y="120" width="80" height="60" rx="8" fill="#0F1B33" stroke="#3B82F6"/>
+    <text x="360" y="146" fill="#E5EDF7" font-size="13" text-anchor="middle">2D LiDAR /</text>
+    <text x="360" y="164" fill="#E5EDF7" font-size="13" text-anchor="middle">ToF + IMU</text>
+  </g>
+
+  <!-- 主板 -->
+  <line x1="180" y1="300" x2="120" y2="300" stroke="#22D3EE" stroke-width="2" marker-end="url(#aR)"/>
+  <g>
+    <rect x="40" y="268" width="92" height="64" rx="8" fill="#0F1B33" stroke="#3B82F6"/>
+    <text x="86" y="294" fill="#E5EDF7" font-size="12" text-anchor="middle">树莓派</text>
+    <text x="86" y="312" fill="#94A3B8" font-size="11" text-anchor="middle">主控板</text>
+  </g>
+
+  <!-- 电池 -->
+  <line x1="540" y1="300" x2="600" y2="300" stroke="#22D3EE" stroke-width="2" marker-end="url(#aR)"/>
+  <g>
+    <rect x="600" y="268" width="92" height="64" rx="8" fill="#0F1B33" stroke="#F59E0B"/>
+    <text x="646" y="294" fill="#F59E0B" font-size="12" text-anchor="middle">电池 +</text>
+    <text x="646" y="312" fill="#94A3B8" font-size="11" text-anchor="middle">充电逻辑</text>
+  </g>
+
+  <!-- 导航栈 -->
+  <line x1="360" y1="380" x2="360" y2="430" stroke="#22D3EE" stroke-width="2" marker-end="url(#aR)"/>
+  <g>
+    <rect x="270" y="432" width="180" height="60" rx="8" fill="#0F1B33" stroke="#22D3EE"/>
+    <text x="360" y="458" fill="#E5EDF7" font-size="13" text-anchor="middle">ROS2 + Nav2</text>
+    <text x="360" y="478" fill="#94A3B8" font-size="11" text-anchor="middle">导航 · 全覆盖路径规划</text>
+  </g>
+
+  <!-- 标注框 右侧 -->
+  <g>
+    <rect x="470" y="120" width="220" height="150" rx="10" fill="#0F1B33" stroke="#1f3a63"/>
+    <text x="486" y="146" fill="#22D3EE" font-size="14" font-weight="bold">底座保留子系统</text>
+    <text x="486" y="172" fill="#E5EDF7" font-size="12">• 差速底盘 + 轮编码器</text>
+    <text x="486" y="194" fill="#E5EDF7" font-size="12">• 2D LiDAR / ToF / IMU</text>
+    <text x="486" y="216" fill="#E5EDF7" font-size="12">• ROS2 + Nav2 导航栈</text>
+    <text x="486" y="238" fill="#E5EDF7" font-size="12">• 电源管理（改太阳能）</text>
+    <text x="486" y="260" fill="#94A3B8" font-size="11">移除：风机/尘盒/滚刷/基站</text>
+  </g>
+</svg>

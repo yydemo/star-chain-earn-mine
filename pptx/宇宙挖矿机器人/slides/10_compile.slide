@@ -1,0 +1,24 @@
+<Slide type="content">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', flexDirection: 'row' }}>
+    <Box style={{ width: '56%', height: '100%', justifyContent: 'center', alignItems: 'center', padding: '40px' }}>
+      <Image src="assets/compile_pipeline.svg" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+    </Box>
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 52px', gap: 14 }}>
+      <Animation animType="fadeIn" duration={600}>
+        <Text style={{ fontSize: 30, color: '#E5EDF7', fontWeight: 'bold' }}>CMR 编程 - 编译工具链</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 16, color: '#94A3B8', lineHeight: 1.8 }}>算法在地面仿真，交叉编译到宇航 SoC，经星链 OTA 下发，在轨实时运行并固化上链。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ gap: 10, marginTop: 4 }}>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>① 算法层：Python / NumPy 仿真内核 + AI 检测器</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>② 交叉编译：ARM64 宇航 SoC 工具链（西电 / 广州平台）</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>③ 烧录 OTA：星链下发扬程与模型权重</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>④ 在轨运行：实时感知 → 决策 → 采矿 → 上链</Text>
+          <Text style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.7 }}>⑤ 区块链固化：每步动作上链溯源</Text>
+        </Box>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>

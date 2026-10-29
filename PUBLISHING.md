@@ -1,17 +1,19 @@
 # 发布到 GitHub（指引）
 
-本仓库已在本地完成 `git init` 并**初次提交**。你（账号稍后提供）只需补上远端并推送即可。
+本仓库已在本地完成 `git init` 并**初次提交**。现账号已确定：**yydemo**（邮箱 yaoliang@263.net）。
+
+> ⚠️ 远端仓库名这里按惯例设为 `cosmic-mining-robot`。若你在 GitHub 上新建的仓库名不同，把下面命令里的仓库名替换成你的实际仓库名即可。
 
 ## 方式一：在 GitHub 网页新建仓库后推送（推荐）
 
 1. 打开 https://github.com/new
-2. 仓库名建议：`cosmic-mining-robot`（或 `cmr`）
+2. 仓库名：`cosmic-mining-robot`（或你自己命名的仓库）
 3. **不要**勾选 "Initialize with README / .gitignore / LICENSE"（本地已含）
-4. 创建后，复制仓库 HTTPS/SSH 地址，执行：
+4. 创建后，执行：
 
 ```bash
 cd D:/program/扫地机转宇宙挖矿/cosmic_mining_robot
-git remote add origin https://github.com/<你的账号>/cosmic-mining-robot.git
+git remote add origin https://github.com/yydemo/cosmic-mining-robot.git
 git branch -M main
 git push -u origin main
 ```

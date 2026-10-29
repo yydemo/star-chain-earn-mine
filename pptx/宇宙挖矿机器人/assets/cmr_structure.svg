@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="gC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <marker id="aC" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#22D3EE"/>
+    </marker>
+  </defs>
+  <rect width="720" height="560" fill="#0B1120"/>
+  <text x="32" y="42" fill="#E5EDF7" font-size="26" font-weight="bold">CMR 整体改装结构</text>
+  <text x="32" y="64" fill="#94A3B8" font-size="14">316L 不锈钢机身 + 钻采工具头 + 抗辐射算力 + 星链天线（自上而下分解）</text>
+
+  <!-- 星链天线 -->
+  <g>
+    <rect x="320" y="86" width="80" height="34" rx="6" fill="#0F1B33" stroke="#22D3EE"/>
+    <text x="360" y="108" fill="#22D3EE" font-size="13" text-anchor="middle">Starlink 天线</text>
+    <line x1="360" y1="120" x2="360" y2="150" stroke="#22D3EE" stroke-width="2" marker-end="url(#aC)"/>
+  </g>
+
+  <!-- 不锈钢外壳（大框） -->
+  <g>
+    <rect x="180" y="152" width="360" height="150" rx="14" fill="#0F1B33" stroke="#3B82F6" stroke-width="2.5"/>
+    <text x="200" y="176" fill="#3B82F6" font-size="14" font-weight="bold">316L 不锈钢轻量化外壳</text>
+    <text x="200" y="196" fill="#94A3B8" font-size="11">散热鳍片 + 被动粒子屏蔽（±150℃ 温差 / 抗微流星）</text>
+    <!-- 内部：抗辐射主板 -->
+    <rect x="210" y="210" width="150" height="72" rx="8" fill="#1a2a14" stroke="#F59E0B"/>
+    <text x="285" y="236" fill="#F59E0B" font-size="12" text-anchor="middle">抗辐射主板</text>
+    <text x="285" y="256" fill="#E5EDF7" font-size="11" text-anchor="middle">SiC 功率 + GaN SoC</text>
+    <!-- 太阳能阵 -->
+    <rect x="372" y="210" width="150" height="72" rx="8" fill="#13233f" stroke="#22D3EE"/>
+    <text x="447" y="236" fill="#22D3EE" font-size="12" text-anchor="middle">太阳能阵</text>
+    <text x="447" y="256" fill="#E5EDF7" font-size="11" text-anchor="middle">MPPT 充电</text>
+    <line x1="360" y1="302" x2="360" y2="330" stroke="#22D3EE" stroke-width="2" marker-end="url(#aC)"/>
+  </g>
+
+  <!-- 工具头 + 样品仓 -->
+  <g>
+    <rect x="230" y="332" width="260" height="70" rx="10" fill="#0F1B33" stroke="#3B82F6"/>
+    <text x="250" y="356" fill="#E5EDF7" font-size="13">钻探/研磨头</text>
+    <text x="250" y="376" fill="#94A3B8" font-size="11">风化层/岩石采样</text>
+    <text x="430" y="356" fill="#E5EDF7" font-size="13" text-anchor="end">样品仓</text>
+    <text x="430" y="376" fill="#94A3B8" font-size="11" text-anchor="end">分格分类存储</text>
+    <line x1="360" y1="402" x2="360" y2="430" stroke="#22D3EE" stroke-width="2" marker-end="url(#aC)"/>
+  </g>
+
+  <!-- 底盘 -->
+  <g>
+    <ellipse cx="360" cy="462" rx="160" ry="60" fill="#0F1B33" stroke="#3B82F6" stroke-width="2"/>
+    <text x="360" y="458" fill="#E5EDF7" font-size="13" text-anchor="middle" font-weight="bold">差速底盘 + 轮</text>
+    <text x="360" y="478" fill="#94A3B8" font-size="11" text-anchor="middle">8–12kg · ROS2 + Nav2</text>
+    <circle cx="240" cy="462" r="20" fill="#13233f" stroke="#22D3EE"/><text x="240" y="467" fill="#22D3EE" font-size="11" text-anchor="middle">轮</text>
+    <circle cx="480" cy="462" r="20" fill="#13233f" stroke="#22D3EE"/><text x="480" y="467" fill="#22D3EE" font-size="11" text-anchor="middle">轮</text>
+  </g>
+
+  <!-- 右侧重量预算 -->
+  <g>
+    <rect x="556" y="152" width="148" height="340" rx="10" fill="#0F1B33" stroke="#1f3a63"/>
+    <text x="572" y="178" fill="#22D3EE" font-size="13" font-weight="bold">重量预算</text>
+    <text x="572" y="202" fill="#E5EDF7" font-size="11">底盘+电机 8–12</text>
+    <text x="572" y="224" fill="#E5EDF7" font-size="11">不锈钢外壳 6–10</text>
+    <text x="572" y="246" fill="#E5EDF7" font-size="11">工具头+仓 3–5</text>
+    <text x="572" y="268" fill="#E5EDF7" font-size="11">电池+阵 8–12</text>
+    <text x="572" y="290" fill="#E5EDF7" font-size="11">主板+载荷 3–5</text>
+    <text x="572" y="312" fill="#E5EDF7" font-size="11">结构余量 5</text>
+    <line x1="572" y1="324" x2="688" y2="324" stroke="#1f3a63"/>
+    <text x="572" y="350" fill="#F59E0B" font-size="13" font-weight="bold">合计 33–49 kg</text>
+    <text x="572" y="376" fill="#94A3B8" font-size="11">适配 SpaceX</text>
+    <text x="572" y="396" fill="#94A3B8" font-size="11">拼车 1/4 板</text>
+  </g>
+</svg>

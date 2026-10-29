@@ -1,8 +1,8 @@
 # 运行生成产物（无需入库，运行后自动生成）
-simulation/*.svg
-simulation/telemetry.csv
-simulation/summary.txt
-simulation/ledger.json
+simulation/map*.svg
+simulation/telemetry*.csv
+simulation/summary*.txt
+simulation/ledger*.json
 simulation/snaps/
 simulation/__pycache__/
 __pycache__/
@@ -10,3 +10,6 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+
+# 本地 venv（隔离依赖，不入库）
+C:/Users/user/.workbuddy/binaries/python/envs/cmr/

@@ -1,0 +1,16 @@
+<Slide type="ending">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', justifyContent: 'center', alignItems: 'center', padding: '0 80px' }}>
+    <Animation animType="fadeIn" duration={700}>
+      <Text style={{ fontSize: 46, color: '#E5EDF7', fontWeight: 'bold', textAlign: 'center', lineHeight: 1.25 }}>一台扫地机器人，<Text style={{ color: '#22D3EE' }}>一条通往宇宙采矿的技术闭环</Text></Text>
+    </Animation>
+    <Animation animType="fadeIn" startType="afterPrevious" duration={700}>
+      <Box style={{ background: '#0F1B33', border: '1px solid #1E3A5F', borderRadius: 14, padding: '28px 40px', marginTop: 36, alignItems: 'center' }}>
+        <Text style={{ fontSize: 22, color: '#3B82F6', fontWeight: 'bold' }}>github.com/yydemo/cosmic-mining-robot</Text>
+        <Text style={{ fontSize: 16, color: '#94A3B8', marginTop: 12, textAlign: 'center', lineHeight: 1.7 }}>含仿真内核 / 结构图 / 区块链 / 星链 / 改装蓝图<Text style={{ color: '#94A3B8' }}><br/></Text>欢迎 Star · Fork · 共建</Text>
+      </Box>
+    </Animation>
+    <Animation animType="fadeIn" startType="afterPrevious" duration={700}>
+      <Text style={{ fontSize: 16, color: '#64748B', marginTop: 30 }}>CMR Team · 2026 · 已开源</Text>
+    </Animation>
+  </Box>
+</Slide>

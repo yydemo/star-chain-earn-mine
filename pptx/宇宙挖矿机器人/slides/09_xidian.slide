@@ -1,0 +1,25 @@
+<Slide type="content">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', flexDirection: 'row' }}>
+    <Box style={{ width: '34%', height: '100%', justifyContent: 'center', padding: '0 48px', background: '#0F1B33' }}>
+      <Text style={{ fontSize: 40, color: '#E5EDF7', fontWeight: 'bold', lineHeight: 1.15 }}>西电第三代<Text style={{ color: '#22D3EE' }}><br/>半导体芯片</Text></Text>
+      <Text style={{ fontSize: 15, color: '#94A3B8', marginTop: 22, lineHeight: 1.7 }}>抗辐射 · 耐高温<Text style={{ color: '#94A3B8' }}><br/></Text>耐高压 · 大功率</Text>
+    </Box>
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 56px', gap: 14 }}>
+      <Animation animType="fadeIn" duration={600}>
+        <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.8 }}>· <Text style={{ color: '#3B82F6', fontWeight: 'bold' }}>西安电子科技大学</Text>：抗辐射 SiC 功率器件随天舟六号入轨验证，面向航天 / 星链。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.8 }}>· <Text style={{ color: '#22D3EE', fontWeight: 'bold' }}>广州黄埔创新中心</Text>（郝跃院士领衔）：6–8 英寸 GaN 中试线，抗辐射 / 耐高温特性。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.8 }}>· <Text style={{ color: '#F59E0B', fontWeight: 'bold' }}>南沙万顷沙</Text>：芯粤能（车规 SiC 主驱）、南砂晶圆（12" SiC 衬底）、芯聚能（功率模块）。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.8 }}>· <Text style={{ color: '#34D399', fontWeight: 'bold' }}>落地</Text>：SiC 功率器件 + 宇航级 SoC 合成「电源-算力合一」主板。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 15, color: '#64748B', lineHeight: 1.7 }}>⚠ 仍需：辐照试验 + 飞行认证方可上星。</Text>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>

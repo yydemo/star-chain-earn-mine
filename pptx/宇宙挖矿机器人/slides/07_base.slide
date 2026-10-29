@@ -1,0 +1,25 @@
+<Slide type="content">
+  <Box style={{ width: '100%', height: '100%', background: '#0B1120', flexDirection: 'row' }}>
+    <Box style={{ width: '55%', height: '100%', justifyContent: 'center', alignItems: 'center', padding: '40px' }}>
+      <Image src="assets/robo_base.svg" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+    </Box>
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 52px', gap: 14 }}>
+      <Animation animType="fadeIn" duration={600}>
+        <Text style={{ fontSize: 32, color: '#E5EDF7', fontWeight: 'bold' }}>扫地机器人底座结构</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Text style={{ fontSize: 16, color: '#94A3B8', lineHeight: 1.8 }}>爆炸视图自底向上六层，是整台 CMR 的「腿」与「神经」。改装只动上身，底盘全部保留。</Text>
+      </Animation>
+      <Animation animType="fadeIn" startType="afterPrevious" duration={600}>
+        <Box style={{ gap: 10, marginTop: 4 }}>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>底盘轮组</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>差速 / 全向轮，适应地外起伏地形</Text></Box>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>电源</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>锂电池 + 太阳能板（西电 SiC MPPT）</Text></Box>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>感知</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>LiDAR + 视觉 SLAM 传感器</Text></Box>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>控制</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>ROS2 边缘主控制器</Text></Box>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>集尘盒</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>改造为集尘 / 样本双仓</Text></Box>
+          <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}><Text style={{ fontSize: 15, color: '#22D3EE', fontWeight: 'bold', width: 90 }}>上盖</Text><Text style={{ fontSize: 15, color: '#CBD5E1' }}>保险杠 + 对接不锈钢机身</Text></Box>
+        </Box>
+      </Animation>
+    </Box>
+  </Box>
+</Slide>
