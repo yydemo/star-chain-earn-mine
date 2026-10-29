@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="340" viewBox="0 0 780 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="780" height="340" fill="#f7f9fc"/>
+  <text x="24" y="32" font-size="20" font-weight="700" fill="#16243a">路线与发射工作流（三阶段）</text>
+
+  <defs>
+    <marker id="b2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#6b7a8c"/></marker>
+  </defs>
+
+  <!-- 阶段A -->
+  <rect x="24" y="60" width="220" height="210" rx="12" fill="#ffffff" stroke="#3a7bd5"/>
+  <text x="134" y="86" font-size="15" font-weight="700" text-anchor="middle" fill="#1d4e8f">阶段 A · 地面原型</text>
+  <text x="134" y="104" font-size="11" text-anchor="middle" fill="#5b6b7d">0–6 月 · &lt; 2 万元</text>
+  <g font-size="12" fill="#3a4a5c">
+    <rect x="44" y="120" width="180" height="26" rx="6" fill="#eef4fb"/><text x="134" y="138" text-anchor="middle">clone OOMWOO 仿真</text>
+    <rect x="44" y="152" width="180" height="26" rx="6" fill="#eef4fb"/><text x="134" y="170" text-anchor="middle">跑通 rover_sim.py</text>
+    <rect x="44" y="184" width="180" height="26" rx="6" fill="#eef4fb"/><text x="134" y="202" text-anchor="middle">3D 打印不锈钢外壳</text>
+    <rect x="44" y="216" width="180" height="26" rx="6" fill="#e9fbf0"/><text x="134" y="234" text-anchor="middle">变现：仿真/教育套件</text>
+  </g>
+
+  <!-- 阶段B -->
+  <rect x="280" y="60" width="220" height="210" rx="12" fill="#ffffff" stroke="#8a5bd5"/>
+  <text x="390" y="86" font-size="15" font-weight="700" text-anchor="middle" fill="#5a3aa0">阶段 B · 抗辐射化</text>
+  <text x="390" y="104" font-size="11" text-anchor="middle" fill="#5b6b7d">6–18 月 · 参赛/筹资</text>
+  <g font-size="12" fill="#3a4a5c">
+    <rect x="300" y="120" width="180" height="26" rx="6" fill="#f3effb"/><text x="390" y="138" text-anchor="middle">西电 SiC 电源板</text>
+    <rect x="300" y="152" width="180" height="26" rx="6" fill="#f3effb"/><text x="390" y="170" text-anchor="middle">抗辐射 SoC 集成</text>
+    <rect x="300" y="184" width="180" height="26" rx="6" fill="#f3effb"/><text x="390" y="202" text-anchor="middle">立方星载荷竞赛</text>
+    <rect x="300" y="216" width="180" height="26" rx="6" fill="#e9fbf0"/><text x="390" y="234" text-anchor="middle">变现：科研算法外包</text>
+  </g>
+
+  <!-- 阶段C -->
+  <rect x="536" y="60" width="220" height="210" rx="12" fill="#ffffff" stroke="#d55b7b"/>
+  <text x="646" y="86" font-size="15" font-weight="700" text-anchor="middle" fill="#9c2f4a">阶段 C · 专属发射</text>
+  <text x="646" y="104" font-size="11" text-anchor="middle" fill="#5b6b7d">18 月+ · 需融资</text>
+  <g font-size="12" fill="#3a4a5c">
+    <rect x="556" y="120" width="180" height="26" rx="6" fill="#fde8ec"/><text x="646" y="138" text-anchor="middle">SpaceX rideshare</text>
+    <rect x="556" y="152" width="180" height="26" rx="6" fill="#fde8ec"/><text x="646" y="170" text-anchor="middle">$35万起 / 50kg SSO</text>
+    <rect x="556" y="184" width="180" height="26" rx="6" fill="#fde8ec"/><text x="646" y="202" text-anchor="middle">小行星/月球南极</text>
+    <rect x="556" y="216" width="180" height="26" rx="6" fill="#e9fbf0"/><text x="646" y="234" text-anchor="middle">变现：在轨数据/算力</text>
+  </g>
+
+  <path d="M244 150 L278 150" stroke="#6b7a8c" stroke-width="3" marker-end="url(#b2)"/>
+  <path d="M500 150 L534 150" stroke="#6b7a8c" stroke-width="3" marker-end="url(#b2)"/>
+
+  <text x="24" y="300" font-size="12" fill="#5b6b7d">诚实前提：阶段 C 的发射（≥ $35 万）远超个人副业预算，须用 A/B 的技术产品先变现再发射。</text>
+  <text x="24" y="320" font-size="11" fill="#8493a5">发射通道：SpaceX Transporter 每 4 月一班；或国内商业航天（星河动力/天兵）搭载。</text>
+</svg>

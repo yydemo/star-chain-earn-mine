@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="560" viewBox="0 0 780 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="780" height="560" fill="#f7f9fc"/>
+  <text x="24" y="34" font-size="22" font-weight="700" fill="#16243a">Cosmic Mining Rover — 系统架构（光底座 + 抗辐射核）</text>
+  <text x="24" y="56" font-size="13" fill="#5b6b7d">扫地机器人底座 → 替换为挖矿执行端与西电抗辐射算力/电源</text>
+
+  <!-- 感知层 -->
+  <rect x="24" y="78" width="732" height="92" rx="10" fill="#ffffff" stroke="#c7d3e0" stroke-width="1.5"/>
+  <rect x="24" y="78" width="150" height="92" rx="10" fill="#e8f1ff" stroke="#9ec3ff"/>
+  <text x="99" y="128" font-size="15" font-weight="700" fill="#1d4e8f" text-anchor="middle">感知层</text>
+  <text x="99" y="148" font-size="11" fill="#3a557d" text-anchor="middle">Sensing</text>
+  <g font-size="12" fill="#23344a">
+    <rect x="190" y="92" width="160" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="270" y="112" text-anchor="middle">多光谱相机 (AION)</text>
+    <rect x="362" y="92" width="170" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="447" y="112" text-anchor="middle">LiDAR / ToF / IMU</text>
+    <rect x="544" y="92" width="196" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="642" y="112" text-anchor="middle">钻探振动谱+近红外</text>
+    <rect x="190" y="128" width="550" height="28" rx="6" fill="#fff4e6" stroke="#f0c98a"/><text x="465" y="147" text-anchor="middle">ASTERIS_THU 风格去噪 → 提升弱信号探测极限</text>
+  </g>
+
+  <!-- AI决策层 -->
+  <rect x="24" y="186" width="732" height="120" rx="10" fill="#ffffff" stroke="#c7d3e0" stroke-width="1.5"/>
+  <rect x="24" y="186" width="150" height="120" rx="10" fill="#e9fbf0" stroke="#9fe3b8"/>
+  <text x="99" y="242" font-size="15" font-weight="700" fill="#1f6b3a" text-anchor="middle">AI 决策层</text>
+  <text x="99" y="262" font-size="11" fill="#2f7a48" text-anchor="middle">Autonomy Stack</text>
+  <g font-size="12" fill="#23344a">
+    <rect x="190" y="200" width="160" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="270" y="220" text-anchor="middle">矿石源检测 (CIANNA)</text>
+    <rect x="362" y="200" width="170" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="447" y="220" text-anchor="middle">多模态理解 (AION)</text>
+    <rect x="544" y="200" width="196" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="642" y="220" text-anchor="middle">图像去噪 (ASTERIS)</text>
+    <rect x="190" y="240" width="160" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="270" y="260" text-anchor="middle">任务预测 (AstroIntel)</text>
+    <rect x="362" y="240" width="170" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="447" y="260" text-anchor="middle">Nav2 全覆盖导航</text>
+    <rect x="544" y="240" width="196" height="30" rx="6" fill="#fff4e6" stroke="#f0c98a"/><text x="642" y="260" text-anchor="middle">核心 IP：本项目的 AI 闭环</text>
+  </g>
+
+  <!-- 执行层 -->
+  <rect x="24" y="322" width="732" height="84" rx="10" fill="#ffffff" stroke="#c7d3e0" stroke-width="1.5"/>
+  <rect x="24" y="322" width="150" height="84" rx="10" fill="#fff0f3" stroke="#f3b6c5"/>
+  <text x="99" y="366" font-size="15" font-weight="700" fill="#9c2f4a" text-anchor="middle">执行层</text>
+  <text x="99" y="386" font-size="11" fill="#b24a66" text-anchor="middle">Actuation</text>
+  <g font-size="12" fill="#23344a">
+    <rect x="190" y="336" width="160" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="270" y="356" text-anchor="middle">差速底盘 (保留)</text>
+    <rect x="362" y="336" width="170" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="447" y="356" text-anchor="middle">钻探/抓取工具头</text>
+    <rect x="544" y="336" width="196" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="642" y="356" text-anchor="middle">样品仓 (分格)</text>
+    <rect x="190" y="372" width="550" height="26" rx="6" fill="#fff4e6" stroke="#f0c98a"/><text x="465" y="390" text-anchor="middle">太阳能阵 / 二次电池（替换回充基站）</text>
+  </g>
+
+  <!-- 抗辐射核 -->
+  <rect x="24" y="422" width="732" height="100" rx="10" fill="#ffffff" stroke="#c7d3e0" stroke-width="1.5"/>
+  <rect x="24" y="422" width="150" height="100" rx="10" fill="#f3effb" stroke="#c3a9ef"/>
+  <text x="99" y="470" font-size="15" font-weight="700" fill="#5a3aa0" text-anchor="middle">抗辐射算力</text>
+  <text x="99" y="490" font-size="11" fill="#6e4bb3" text-anchor="middle">与电源</text>
+  <text x="99" y="508" font-size="10" fill="#6e4bb3" text-anchor="middle">西电三代半</text>
+  <g font-size="12" fill="#23344a">
+    <rect x="190" y="436" width="170" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="275" y="456" text-anchor="middle">西电 SiC 功率器件</text>
+    <rect x="372" y="436" width="180" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="462" y="456" text-anchor="middle">抗辐射 SoC (宇航级)</text>
+    <rect x="564" y="436" width="176" height="30" rx="6" fill="#eef4fb" stroke="#bcd3ee"/><text x="652" y="456" text-anchor="middle">不锈钢散热/屏蔽</text>
+    <rect x="190" y="474" width="550" height="30" rx="6" fill="#fff4e6" stroke="#f0c98a"/><text x="465" y="494" text-anchor="middle">已在轨验证：天舟六号 LEO 卫星（抗辐射 SiC）</text>
+  </g>
+
+  <text x="24" y="548" font-size="11" fill="#8493a5">蓝框＝开源天文 AI 工具接入点　·　橙框＝项目核心 IP / 关键事实</text>
+</svg>
