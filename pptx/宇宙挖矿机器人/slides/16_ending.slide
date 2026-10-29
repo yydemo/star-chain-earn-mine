@@ -5,7 +5,8 @@
     </Animation>
     <Animation animType="fadeIn" startType="afterPrevious" duration={700}>
       <Box style={{ background: '#0F1B33', border: '1px solid #1E3A5F', borderRadius: 14, padding: '28px 40px', marginTop: 36, alignItems: 'center' }}>
-        <Text style={{ fontSize: 22, color: '#3B82F6', fontWeight: 'bold' }}>github.com/yydemo/cosmic-mining-robot</Text>
+        <Text style={{ fontSize: 22, color: '#3B82F6', fontWeight: 'bold' }}>github.com/yydemo/star-chain-earn-mine</Text>
+        <Text style={{ fontSize: 15, color: '#94A3B8', marginTop: 8 }}>星链赚大矿 · 宇宙挖矿机器人</Text>
         <Text style={{ fontSize: 16, color: '#94A3B8', marginTop: 12, textAlign: 'center', lineHeight: 1.7 }}>含仿真内核 / 结构图 / 区块链 / 星链 / 改装蓝图<Text style={{ color: '#94A3B8' }}><br/></Text>欢迎 Star · Fork · 共建</Text>
       </Box>
     </Animation>

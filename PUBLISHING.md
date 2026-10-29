@@ -2,18 +2,18 @@
 
 本仓库已在本地完成 `git init` 并**初次提交**。现账号已确定：**yydemo**（邮箱 yaoliang@263.net）。
 
-> ⚠️ 远端仓库名这里按惯例设为 `cosmic-mining-robot`。若你在 GitHub 上新建的仓库名不同，把下面命令里的仓库名替换成你的实际仓库名即可。
+> ⚠️ 远端仓库名已设为 `star-chain-earn-mine`（中文展示名：**星链赚大矿**）。若你在 GitHub 上新建的仓库名不同，把下面命令里的仓库名替换成你的实际仓库名即可。
 
 ## 方式一：在 GitHub 网页新建仓库后推送（推荐）
 
 1. 打开 https://github.com/new
-2. 仓库名：`cosmic-mining-robot`（或你自己命名的仓库）
+2. 仓库名：`star-chain-earn-mine`（或你自己命名的仓库）
 3. **不要**勾选 "Initialize with README / .gitignore / LICENSE"（本地已含）
 4. 创建后，执行：
 
 ```bash
 cd D:/program/扫地机转宇宙挖矿/cosmic_mining_robot
-git remote add origin https://github.com/yydemo/cosmic-mining-robot.git
+git remote add origin https://github.com/yydemo/star-chain-earn-mine.git
 git branch -M main
 git push -u origin main
 ```
@@ -21,7 +21,7 @@ git push -u origin main
 ## 方式二：用 GitHub CLI
 
 ```bash
-gh repo create cosmic-mining-robot --public --source=. --remote=origin --push
+gh repo create star-chain-earn-mine --public --source=. --remote=origin --push
 ```
 
 ## 发布前自检
@@ -34,7 +34,7 @@ gh repo create cosmic-mining-robot --public --source=. --remote=origin --push
 ## 仓库内容速览
 
 ```
-cosmic-mining-robot/
+star-chain-earn-mine/
 ├── README.md                 # 总蓝图（含现实可行性体检）
 ├── docs/
 │   ├── system_overview.md     # 系统总览与内容清单（整体架构/两大场景/供应链/运行表）
