@@ -25,6 +25,10 @@
 
 ---
 
+## 制造与技术背书
+
+团队已具备工业产品识别、5G 终端硬件、多模态感知与数据安全的实际专利与软著积累（详见 [`docs/manufacturing_credentials.md`](docs/manufacturing_credentials.md)），可直接支撑 CMR 地面原型的传感器、样品识别与加密回传模块的自主设计与制造。抗辐射器件与发射仍分别依赖西电与 SpaceX。
+
 ## 1. 概念：扫地机器人 → 宇宙挖矿机器人
 
 扫地机器人和行星探测车（rover）在底层**高度同构**：
@@ -180,6 +184,7 @@ git clone https://github.com/<OOMWOO>/OOMWOO   # 见 docs 选型
 - `docs/blockchain.md` — 区块链分析模块：勘探过程上链，做数据溯源 / 完整性校验 / 多机器人共识对账
 - `docs/launch_plan.md` — 发射方案与重量预算（马斯克/SpaceX rideshare）
 - `docs/monetization.md` — 变现路径（科研服务 / 数据标注 / 教育套件 / 在轨算力）
+- `docs/manufacturing_credentials.md` — 制造与技术背书：专利、软著、论文与省科技计划项目，及其与 CMR 的对应关系
 - `simulation/rover_sim.py` — 火星车仿真内核（含集尘盒/星链）
 - `simulation/ai_core.py` — 机载 AI：ASTERIS 去噪 + CIANNA 矿石源检测
 - `simulation/dustbox_vision.py` — 集尘盒摄像识别 + 区块链资产化
