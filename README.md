@@ -27,7 +27,7 @@
 
 ## 制造与技术背书
 
-团队已具备工业产品识别、5G 终端硬件、多模态感知与数据安全的实际专利与软著积累（详见 [`docs/manufacturing_credentials.md`](docs/manufacturing_credentials.md)），可直接支撑 CMR 地面原型的传感器、样品识别与加密回传模块的自主设计与制造。抗辐射器件与发射仍分别依赖西电与 SpaceX。
+团队已具备工业产品识别、5G 终端硬件、多模态感知与数据安全的实际专利与软著积累（详见 [`docs/manufacturing_credentials.md`](docs/manufacturing_credentials.md)），可直接支撑 CMR 地面原型的传感器、样品识别与加密回传模块的自主设计与制造。抗辐射器件与发射计划分别依托西电第三代半导体技术与 SpaceX rideshare 商业发射服务（目前尚未建立正式合作）。
 
 ## 1. 概念：扫地机器人 → 宇宙挖矿机器人
 
