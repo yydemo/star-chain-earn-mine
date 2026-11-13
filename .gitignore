@@ -1,4 +1,4 @@
-# 运行生成产物（无需入库，运行后自动生成）
+# 运行生成产物（无需入库，运行后自动生成） / Generated run outputs (not committed; created automatically on run)
 simulation/map*.svg
 simulation/telemetry*.csv
 simulation/summary*.txt
@@ -11,9 +11,9 @@ __pycache__/
 venv/
 .DS_Store
 
-# 本地 venv（隔离依赖，不入库）
+# 本地 venv（隔离依赖，不入库） / Local venv (isolated dependencies, not committed)
 C:/Users/user/.workbuddy/binaries/python/envs/cmr/
 
-# slidep 构建缓存（PPT 生成过程文件，不入库）
+# slidep 构建缓存（PPT 生成过程文件，不入库） / slidep build cache (PPT generation intermediates, not committed)
 **/.slidep/
 **/.cache/

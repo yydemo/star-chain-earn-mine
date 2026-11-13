@@ -15,10 +15,25 @@ blockchain_ledger.py — CMR 区块链式分析与数据溯源模块（纯标准
   ledger = Ledger(difficulty=2)
   ledger.add_event("R1", "mine", {"cell":(3,7),"grade":0.82})
   ledger.validate_chain()      # True / False
-  ledger.analyze()             # 统计与溯源摘要
+  ledger.analyze()             # 统计与溯源摘要 / stats and provenance summary
   ledger.to_json("ledger.json")
 
 多机共识见 Ledger.consensus_with() 与模块 __main__ 演示。
+
+blockchain_ledger.py — CMR blockchain-style analysis and data provenance module
+(standard library only, no external deps)
+
+Writes the cosmic mining robot's "telemetry / mining / sample / multi-robot" events into a
+**hash chain**, using the blockchain structure for three things:
+  1. Data provenance (traceability) —— any ore sample traces back to rover / step / cell / grade / on-chain hash
+  2. Integrity checks (integrity)   —— any tampering breaks subsequent block hashes and is caught at once
+  3. Multi-robot consensus           —— mining claims by several rovers on the same cell are reconciled by rule
+
+Block structure (simplified PoW-lite; a block is "produced" when the nonce meets the leading-zero difficulty):
+  Block = { index, ts, prev_hash, rover_id, event, payload, nonce, hash }
+
+Usage: see the example above. For multi-robot consensus see Ledger.consensus_with() and the
+module's __main__ demo.
 """
 
 import hashlib
@@ -29,11 +44,14 @@ from typing import Any, Dict, List, Optional
 
 
 def _sha256(s: str) -> str:
+    """SHA256 十六进制摘要。 / SHA256 hex digest."""
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
 
 
 @dataclass
 class Block:
+    """一个区块。 / One block."""
+
     index: int
     ts: float
     prev_hash: str
@@ -45,6 +63,7 @@ class Block:
 
     def serialize_for_hash(self) -> str:
         # 不含 hash 与 nonce 自身的稳定序列化（nonce 在挖矿时迭代）
+        # Stable serialization excluding the hash itself (the nonce is iterated while mining)
         body = json.dumps(
             {
                 "index": self.index,
@@ -61,6 +80,7 @@ class Block:
         return body
 
     def mine(self, difficulty: int) -> None:
+        """迭代 nonce 直到满足前导 0 难度。 / Iterate the nonce until the leading-zero difficulty is met."""
         prefix = "0" * difficulty
         while True:
             self.hash = _sha256(self.serialize_for_hash())
@@ -69,6 +89,7 @@ class Block:
             self.nonce += 1
 
     def to_dict(self) -> Dict[str, Any]:
+        """转为字典。 / Convert to a dict."""
         return {
             "index": self.index,
             "ts": self.ts,
@@ -82,7 +103,7 @@ class Block:
 
 
 class Ledger:
-    """单台/多台漫游车的哈希链账本。"""
+    """单台/多台漫游车的哈希链账本。 / Hash-chain ledger for one or more rovers."""
 
     def __init__(self, difficulty: int = 2, rover_id: str = "CMR", genesis_note: str = "CMR genesis"):
         self.difficulty = difficulty
@@ -90,7 +111,7 @@ class Ledger:
         self.chain: List[Block] = []
         self._add_genesis(genesis_note)
 
-    # ---- 建链 ----
+    # ---- 建链 / build the chain ----
     def _add_genesis(self, note: str) -> None:
         g = Block(index=0, ts=time.time(), prev_hash="0" * 64,
                   rover_id=self.rover_id, event="genesis", payload={"note": note})
@@ -98,7 +119,7 @@ class Ledger:
         self.chain.append(g)
 
     def add_event(self, event: str, payload: Dict[str, Any], rover_id: Optional[str] = None) -> Block:
-        """追加一个事件区块（采矿/遥测/样品/共识）。"""
+        """追加一个事件区块（采矿/遥测/样品/共识）。 / Append an event block (mining / telemetry / sample / consensus)."""
         prev = self.chain[-1]
         rid = rover_id or self.rover_id
         b = Block(index=len(self.chain), ts=time.time(),
@@ -107,9 +128,10 @@ class Ledger:
         self.chain.append(b)
         return b
 
-    # ---- 校验 ----
+    # ---- 校验 / validation ----
     def validate_chain(self) -> bool:
-        """重算每个区块哈希与前导难度、校验 prev_hash 链接，任一不符即 False。"""
+        """重算每个区块哈希与前导难度、校验 prev_hash 链接，任一不符即 False。
+        Recompute each block hash and leading difficulty and check prev_hash links; False on any mismatch."""
         for i, b in enumerate(self.chain):
             if _sha256(b.serialize_for_hash()) != b.hash:
                 return False
@@ -120,15 +142,17 @@ class Ledger:
         return True
 
     def tamper_demo(self, index: int, payload_patch: Dict[str, Any]) -> bool:
-        """演示篡改：修改某区块 payload 但不重算哈希，校验应失败。"""
+        """演示篡改：修改某区块 payload 但不重算哈希，校验应失败。
+        Tamper demo: change a block payload without recomputing its hash; validation should fail."""
         if 0 < index < len(self.chain):
             self.chain[index].payload.update(payload_patch)
-            return self.validate_chain()  # 期望 False
+            return self.validate_chain()  # 期望 False / expected False
         return True
 
-    # ---- 分析 ----
+    # ---- 分析 / analysis ----
     def analyze(self) -> Dict[str, Any]:
-        blocks = self.chain[1:]  # 去掉 genesis
+        """统计与溯源摘要。 / Statistics and provenance summary."""
+        blocks = self.chain[1:]  # 去掉 genesis / skip genesis
         mining = [b for b in blocks if b.event == "mine"]
         samples = [b for b in blocks if b.event == "sample"]
         assets = [b for b in blocks if b.event == "asset"]
@@ -160,7 +184,8 @@ class Ledger:
         }
 
     def trace_cell(self, cell) -> List[Dict[str, Any]]:
-        """溯源：返回涉及某坐标格的所有区块（采矿/样品/争议）。"""
+        """溯源：返回涉及某坐标格的所有区块（采矿/样品/争议）。
+        Provenance: return all blocks involving a grid cell (mining / samples / disputes)."""
         cell = tuple(cell) if isinstance(cell, list) else cell
         out = []
         for b in self.chain:
@@ -169,16 +194,21 @@ class Ledger:
                 out.append(b.to_dict())
         return out
 
-    # ---- 多机器人共识 ----
+    # ---- 多机器人共识 / multi-robot consensus ----
     def consensus_with(self, other: "Ledger",
                        rule: str = "highest_grade") -> Dict[str, Any]:
         """
         与另一台漫游车账本对账：找出"同一坐标格被多方采矿"的冲突，按规则定夺归属。
         rule: "highest_grade"（取品位高者）| "earliest"（取最早步）。
         返回冲突清单与最终归属表，并用一个 "consensus" 事件区块记下裁决。
+
+        Reconcile with another rover's ledger: find cells mined by more than one party and
+        decide ownership by rule. rule: "highest_grade" (higher grade wins) | "earliest"
+        (earliest step wins). Returns the conflict list and final ownership table, and
+        records the ruling in a "consensus" event block.
         """
         mine_of = lambda L: [b for b in L.chain if b.event == "mine"]
-        claims = {}  # cell -> list of (rover_id, step, grade, block_index)
+        claims = {}  # 坐标格 -> [(rover_id, step, grade, block_index)] / cell -> list of (rover_id, step, grade, block_index)
         for L, rid in ((self, self.rover_id), (other, other.rover_id)):
             for b in mine_of(L):
                 c = b.payload.get("cell")
@@ -197,7 +227,7 @@ class Ledger:
                 winner = max(v, key=lambda x: x[2])
             resolution[str(c)] = {"owner": winner[0], "rule": rule,
                                   "grade": winner[2], "step": winner[1]}
-        # 把裁决写入本链（共识事件）
+        # 把裁决写入本链（共识事件） / write the ruling to this chain (consensus event)
         self.add_event("consensus", {
             "rule": rule,
             "conflict_cells": [str(c) for c in conflicts],
@@ -211,14 +241,16 @@ class Ledger:
         }
 
     def to_json(self, path: str) -> None:
+        """导出为 JSON。 / Export to JSON."""
         with open(path, "w", encoding="utf-8") as f:
             json.dump([b.to_dict() for b in self.chain], f, ensure_ascii=False, indent=2)
 
     @classmethod
     def from_json(cls, path: str) -> "Ledger":
+        """从 JSON 重建账本。 / Rebuild a ledger from JSON."""
         with open(path, "r", encoding="utf-8") as f:
             raw = json.load(f)
-        L = cls(difficulty=2)  # 重建容器，随后用文件覆盖
+        L = cls(difficulty=2)  # 重建容器，随后用文件覆盖 / build a container, then overwrite from the file
         L.chain = []
         for d in raw:
             b = Block(**{k: d[k] for k in ("index", "ts", "prev_hash", "rover_id",
@@ -229,27 +261,29 @@ class Ledger:
 
 if __name__ == "__main__":
     # 演示：两台漫游车在同一片矿区作业，对其中一格的主张产生冲突，链上对账。
+    # Demo: two rovers work the same area, their claims on one cell conflict, and they reconcile on-chain.
     import random
 
     r1 = Ledger(difficulty=2, rover_id="R1")
     r2 = Ledger(difficulty=2, rover_id="R2")
 
-    # R1 采矿若干格
-    cells = [(3, 4), (3, 5), (7, 8), (10, 2), (3, 4)]  # 注意 (3,4) 重复出现
+    # R1 采矿若干格 / R1 mines several cells
+    cells = [(3, 4), (3, 5), (7, 8), (10, 2), (3, 4)]  # 注意 (3,4) 重复出现 / note (3,4) appears twice
     for k, c in enumerate(cells):
         r1.add_event("mine", {"cell": list(c), "grade": round(random.uniform(0.5, 0.95), 3), "step": 10 * k})
-    # R2 也采到 (3,4)（争议格），以及自己独有格
+    # R2 也采到 (3,4)（争议格），以及自己独有格 / R2 also mines (3,4) (disputed) plus its own cells
     for k, c in enumerate([(3, 4), (12, 9), (5, 5)]):
         r2.add_event("mine", {"cell": list(c), "grade": round(random.uniform(0.5, 0.95), 3), "step": 10 * k})
 
-    print("R1 完整性:", r1.validate_chain(), "| R2 完整性:", r2.validate_chain())
+    print("R1 完整性 / integrity:", r1.validate_chain(), "| R2 完整性 / integrity:", r2.validate_chain())
     res = r1.consensus_with(r2, rule="highest_grade")
-    print("冲突格:", res["conflict_cells"])
-    print("裁决:", json.dumps(res["resolution"], ensure_ascii=False))
-    print("对账后 R1 完整性:", r1.validate_chain())
+    print("冲突格 / Conflict cells:", res["conflict_cells"])
+    print("裁决 / Ruling:", json.dumps(res["resolution"], ensure_ascii=False))
+    print("对账后 R1 完整性 / R1 integrity after reconciliation:", r1.validate_chain())
 
-    # 篡改演示：改 R1 某区块品位但不重算哈希
+    # 篡改演示：改 R1 某区块品位但不重算哈希 / Tamper demo: change a grade in R1 without recomputing the hash
     before = r1.validate_chain()
     r1.tamper_demo(2, {"grade": 0.99})
     after = r1.validate_chain()
     print(f"篡改前完整性={before} → 篡改后完整性={after}（应变为 False，证明链不可篡改）")
+    print(f"Integrity before tampering={before} → after={after} (should become False, proving the chain is tamper-evident)")
