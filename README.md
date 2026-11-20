@@ -2,6 +2,15 @@
 
 > 语言说明 / Language note：本仓库文档、代码注释与程序输出均为中英双语，一般先中文后英文。 / All documentation, code comments and program output in this repository are bilingual (Chinese–English), usually Chinese first, then English.
 
+## 试玩配套游戏 / Play the companion game
+
+手机打开即可玩 HTML5 小游戏「月球挖矿 / Moon Miner」。游戏按本仓库的设定编写：胶囊飞船飞到月球，落地后驾驶 CMR 扫地机式着陆器扫月壤，尘盒分格拍照，并在游戏内的模拟市场出售（不连接真实区块链，也不涉及真钱）。
+
+Play the HTML5 game **Moon Miner** on your phone. It follows this repository's setting: fly a capsule spacecraft to the Moon, drive the CMR vacuum-style lander to sweep regolith, photograph each dust-box compartment, and sell simulated lots on the in-game market (no real blockchain and no real money).
+
+- 试玩 / Play: https://yydemo.github.io/moon-miner/
+- 源码 / Source: https://github.com/yydemo/moon-miner
+
 > 把一台开源扫地机器人，改装成一台能在地外天体表面自主勘探、识别并采集资源的 AI 挖矿机器人。
 > 配合西安电子科技大学（西电）三代半（SiC/GaN）抗辐射功率器件、不锈钢轻量化外壳，以及 SpaceX rideshare 发射通道，构建一条「地面原型 → 在轨/月面验证 → 商业航天服务」的可执行路线。
 >
